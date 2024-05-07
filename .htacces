@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+
+# Serve index.html for the root
+RewriteRule ^index\.html$ - [L]
+
+# Exclude _next/image from rewrite rules
+RewriteCond %{REQUEST_URI} !^/_next/image
+
+# Only apply the rewrite to non-file, non-directory requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

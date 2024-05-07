@@ -1,0 +1,34 @@
+{
+  "name": "newventurecp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "next": "^13.5.6",
+    "next-themes": "^0.2.1",
+    "prop-types": "^15.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-modal-video": "^1.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/prop-types": "^15.7.12",
+    "@types/react": "^18.3.1",
+    "autoprefixer": "^10.4.13",
+    "eslint-plugin-next": "^0.0.0",
+    "json5": "^2.2.3",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^5.0.4"
+  }
+}
