@@ -28,6 +28,7 @@
     "@types/nodemailer": "^6.4.15",
     "@types/prop-types": "^15.7.12",
     "@types/react": "^18.3.1",
+    "@types/react-modal-video": "^1.2.3",
     "autoprefixer": "^10.4.13",
     "eslint-plugin-next": "^0.0.0",
     "json5": "^2.2.3",

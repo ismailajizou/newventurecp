@@ -8,7 +8,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const List = ({ text }: { text: string }) => (
     <p className="mb-5 flex items-center  text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
@@ -18,13 +18,13 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 mt-20 md:pt-20 lg:pt-20">
+    <section id="about" className="mt-20 pt-16 md:pt-20 lg:pt-20">
       <div className="container">
-        <div className="flex flex-wrap items-center   -mx-4">
-          <div className="w-full lg:w-1/2 px-4">
+        <div className="-mx-4 flex flex-wrap   items-center">
+          <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInUp text-justify" data-wow-delay=".15s">
               <SectionTitle
-                title="Why Choose us?" 
+                title="Why Choose us?"
                 paragraph="   With its strategic location, diverse opportunities, and pro-business environment, Morocco holds immense potential for international companies seeking growth and expansion. From navigating regulatory landscapes to fostering strategic partnerships, we provide the expertise and local insights necessary for success in this vibrant ecosystem.
                 <br /><br />
                 We believe in more than just business transactions; we're committed to fostering sustainable development and economic empowerment within Morocco. Through collaborative initiatives and community engagement, we strive to create lasting value for both our clients and the Moroccan society."
@@ -32,9 +32,15 @@ const AboutSectionOne = () => {
               />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-4 -mt-8">
-            <div className="wow fadeInUp relative mx-auto lg:ml-auto aspect-[45/44] max-w-[500px]" data-wow-delay=".2s"
-             style={{ border: '5px solid #d4d4d8', borderRadius: '10%', overflow: 'hidden' }}
+          <div className="-mt-8 w-full px-4 lg:w-1/2">
+            <div
+              className="wow fadeInUp relative mx-auto aspect-[45/44] max-w-[500px] lg:ml-auto"
+              data-wow-delay=".2s"
+              style={{
+                border: "5px solid #d4d4d8",
+                borderRadius: "10%",
+                overflow: "hidden",
+              }}
             >
               <Image
                 src="/images/about/about_img.png"
