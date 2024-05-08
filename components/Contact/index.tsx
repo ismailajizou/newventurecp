@@ -1,10 +1,9 @@
 "use client";
+import { TContactForm, contactFormSchema } from "@/types/contact";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import NewsLatterBox from "./NewsLatterBox";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { useState } from "react";
-import { TContactForm, contactFormSchema } from "@/types/contact";
 
 const Contact = () => {
   const [status, setStatus] = useState<{
@@ -14,7 +13,8 @@ const Contact = () => {
 
   const {
     register,
-    formState: { errors, isLoading },
+    formState: { errors,isSubmitting },
+    reset,
     handleSubmit,
   } = useForm<TContactForm>({
     resolver: zodResolver(contactFormSchema),
@@ -41,6 +41,7 @@ const Contact = () => {
         message: "Message sent successfully",
         type: "success",
       });
+      reset();
     } catch (error) {
       setStatus({
         message:
@@ -65,6 +66,17 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
+              {status && (
+                <p
+                  className={`mb-4 text-sm ${
+                    status.type === "success"
+                      ? "text-green-500"
+                      : "text-red-500"
+                  }`}
+                >
+                  {status.message}
+                </p>
+              )}
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
@@ -131,7 +143,11 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-md bg-primary px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                    <button 
+                    
+                    className={`rounded-md bg-primary px-9 py-4 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp ${
+                      isSubmitting ? "cursor-not-allowed opacity-70" : ""
+                    }`}>
                       Send
                     </button>
                   </div>
