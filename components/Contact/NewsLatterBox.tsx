@@ -4,24 +4,11 @@ const NewsLatterBox = () => {
       className="wow fadeInUp relative z-10 rounded-md bg-primary/[3%] p-8 dark:bg-primary/10 sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
-      <h3 className="mb-14 text-2xl font-bold leading-tight text-black dark:text-white">
+      <h3 className="mb-10 text-2xl font-bold leading-tight text-black dark:text-white">
         Contact us !
       </h3>
-      
+
       <form>
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 md:w-1/2">
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="mb-4 block text-sm font-bold text-dark dark:text-white"
-              >
-                Technical support
-              </label>
-            </div>
-          </div>
-        </div>
-        
         {/* Mobile and Address sections on the same level */}
         <div className="-mx-6 flex flex-wrap">
           {/* Mobile Section */}
@@ -31,26 +18,24 @@ const NewsLatterBox = () => {
                 htmlFor="name"
                 className="mb-3 block text-sm font-bold text-dark dark:text-white"
               >
-                Mobile
+                Phone
               </label>
-              <p className="mb-5 border-b border-body-color border-opacity-25 pb-4 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-                Phone number in Morocco: +212 667157721
+              <p className="mb-5 border-b border-body-color border-opacity-25 pb-12 pt-5 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
+                Morocco : +212667157721
               </p>
-              <p className="mb-5 border-b border-body-color border-opacity-25 pb-4 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-                Phone in the Netherlands: +31653489331
+              <p className="mb-4y border-b border-body-color border-opacity-25 pb-12 pt-5 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
+                Netherlands : +31653489331
               </p>
               <label
                 htmlFor="name"
                 className="mb-2 block text-sm font-bold text-dark dark:text-white"
               >
-                EMAIL 
+                EMAIL
               </label>
-              <p className="mb-5 border-b border-body-color border-opacity-25 pb-2 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-               info@newventurecp.com 
+              <p className="mb-5  border-body-color border-opacity-25 pb-2 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
+                info@newventurecp.com
               </p>
             </div>
-
-           
           </div>
 
           {/* Address Section */}
@@ -63,25 +48,21 @@ const NewsLatterBox = () => {
                 Address
               </label>
               <p className="mb-5 border-b border-body-color border-opacity-25 pb-4 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-                -55 Boulevard Mohamed Zerktouni, Casablanca 20250, Morocco
+                55 Boulevard Mohamed Zerktouni, Casablanca 20250, Morocco
               </p>
               <p className="mb-5 border-b border-body-color border-opacity-25 pb-4 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-                -Albert Einsteinweg 132408 AP Alphen aan den Rijn, Netherlands.
+                Albert Einsteinweg 132408 AP Alphen aan den Rijn, Netherlands.
               </p>
-              
             </div>
           </div>
         </div>
 
-      
-
-
-       { /*
+        {/*
         <p className="text-center text-base font-medium leading-relaxed text-body-color">
           No spam guaranteed, So please don’t send any spam mail.
   </p>*/}
       </form>
-      <div className="absolute top-0 left-0 z-[-1]">
+      <div className="absolute left-0 top-0 z-[-1]">
         <svg
           width="370"
           height="596"
