@@ -10,6 +10,9 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Inter } from "next/font/google";
+import PrivacyPolicyPage from "./privacy_policy/page";
+import GPDRpage from "./GPDR/page";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +24,8 @@ export default function Home() {
       {/*<Features />*/}
 
       <AboutSectionOne />
-
+      {/*<PrivacyPolicyPage /> */}
+      {/*<GPDRpage/>*/}
       <Services />
       <Blog />
       <Contact />

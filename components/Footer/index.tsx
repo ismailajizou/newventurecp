@@ -14,14 +14,14 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                  
-                <div className=" flex justify-between items-center h-30 w-full px-10  text-white">
+                <div className="bg-gradient-to-r flex justify-between items-center h-30 w-full px-10  text-white">
               {/* Logo LIGHT */}
               <h1 className="text-2xl font-bold text-[#00df9a]">
               <span className=" w-full dark:hidden text-transparent bg-clip-text bg-gradient-to-r from-[#2A3D8C] to-[#4A6CF7]">NEWVENTURECP</span>
               </h1>
               </div>
 
-              <div className=" flex justify-between items-center h-30 w-full px-10  text-white">
+              <div className="bg-gradient-to-r flex justify-between items-center h-30 w-full px-10  text-white">
               {/* Logo DARK*/}
               <h1 className="text-2xl  font-bold text-[#00df9a]">
               <span className=" hidden w-full dark:block text-transparent xl:-mr-0 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#4A6CF7]">NEWVENTURECP</span>
@@ -59,16 +59,16 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/"
+                      href="/GPDR"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      TOS{" "}
+                      GDPR{" "}
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/privacy_policy"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
@@ -89,11 +89,11 @@ const Footer = () => {
                
                   <li>
                     <a
-                      href="/"
+                      href="/contact"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
-                      About{" "}
+                      CONTACT{" "}
                     </a>
                   </li>
                 </ul>

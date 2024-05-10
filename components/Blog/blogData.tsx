@@ -14,7 +14,7 @@ const blogData = [
     paragraph:
       " With our expertise in water management solutions, New Venture Partners is committed to helping companies address the challenges of water scarcity and sustainability in Morocco. From feasibility studies to project implementation, we offer a range of services tailored to your needs. Whether you're interested in water infrastructure development, desalination projects, or water conservation initiatives, our team will work closely with you to design and execute sustainable solutions that drive positive impact for communities and the environment. Partner with us to make a difference in Morocco's water management sector"
       ,
-    image: "/images/blog/water.png",
+    image: "/images/blog/Water.png",
     tags: ["Water Management"],
   },
   {
