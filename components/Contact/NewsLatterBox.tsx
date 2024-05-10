@@ -28,7 +28,7 @@ const NewsLatterBox = () => {
               </p>
               <label
                 htmlFor="name"
-                className="mb-2 block text-sm font-bold text-dark dark:text-white"
+                className="mb-7 mt-5 block text-sm font-bold text-dark dark:text-white"
               >
                 EMAIL
               </label>
