@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header left-0 top-0 z-40 flex w-screen items-center bg-transparent ${
           sticky
             ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute"
@@ -53,18 +53,18 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <div className="h-30 flex w-full items-center justify-between  px-10  text-white">
+                <div className="h-30 flex w-full items-center justify-between px-10 text-white">
                   {/* Logo LIGHT */}
-                  <h1 className="text-4xl font-bold text-[#00df9a]">
+                  <h1 className="md:text-3xl text-lg font-bold text-[#00df9a]">
                     <span className="bg-gradient-to-r from-[#2A3D8C] to-[#4A6CF7] bg-clip-text text-transparent dark:hidden inline-block">
                       NEWVENTURECP
                     </span>
                   </h1>
                 </div>
 
-                <div className="h-30 flex w-full items-center justify-between   text-white">
+                <div className="h-30 flex w-full items-center justify-between text-white">
                   {/* Logo DARK*/}
-                  <h1 className="text-4xl font-bold text-[#00df9a]">
+                  <h1 className="text-xl font-bold text-[#00df9a]">
                     <span className="hidden w-full bg-gradient-to-r from-[#FFFFFF] to-[#4A6CF7] bg-clip-text text-transparent dark:block xl:-mr-0">
                       NEWVENTURECP
                     </span>
