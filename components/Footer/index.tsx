@@ -17,14 +17,14 @@ const Footer = () => {
                 <div className="bg-gradient-to-r flex justify-between items-center h-30 w-full px-10  text-white">
               {/* Logo LIGHT */}
               <h1 className="text-2xl font-bold text-[#00df9a]">
-              <span className=" w-full dark:hidden text-transparent bg-clip-text bg-gradient-to-r from-[#2A3D8C] to-[#4A6CF7]">NEWVENTURECP</span>
+              <span className=" w-full dark:hidden text-transparent bg-clip-text bg-gradient-to-r from-[#2A3D8C] to-[#4A6CF7]">New Venture Partners</span>
               </h1>
               </div>
 
               <div className="bg-gradient-to-r flex justify-between items-center h-30 w-full px-10  text-white">
               {/* Logo DARK*/}
               <h1 className="text-2xl  font-bold text-[#00df9a]">
-              <span className=" hidden w-full dark:block text-transparent xl:-mr-0 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#4A6CF7]">NEWVENTURECP</span>
+              <span className=" hidden w-full dark:block text-transparent xl:-mr-0 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#4A6CF7]">New Venture Partners</span>
               </h1>
               </div>
                 
