@@ -1,40 +1,42 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 const Hero = () => {
   return (
-  <>
-  <section
-    id="home"
-    className="relative z-10 overflow-hidden pt-[300px] pb-16 md:pt-[350px] md:pb-[600px] xl:pt-[380px] xl:pb-[360px] 2xl:pt-[310px] 2xl:pb-[400px]"
-  >
-   
-
-    {/* Text Content */}
-    <div className="container relative z-10">
-      <div className="-mx-4 flex flex-wrap">
-        <div className="w-full px-4">
-          <div className="wow fadeInUp mx-auto max-w-[800px] text-center" data-wow-delay=".2s">
-            <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-              Welcome to Our Platform
-            </h1>
-            <p className="mb-12 text-base font-medium !leading-relaxed text-black  dark:text-white  dark:opacity-90 sm:text-lg md:text-xl">
-            We put our expertise and network to the benefit of our clients. We approach each client personally and provide you with the value that builds our long term business relationship
-            </p>
+    <>
+      <section
+        id="home"
+        className="relative z-10 overflow-hidden pb-16 pt-[300px] md:pb-[600px] md:pt-[350px] xl:pb-[360px] xl:pt-[380px] 2xl:pb-[400px] 2xl:pt-[310px]"
+      >
+        {/* Text Content */}
+        <div className="container relative z-10">
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-4">
+              <div
+                className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                data-wow-delay=".2s"
+              >
+                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Welcome to Our Platform
+                </h1>
+                <p className="mb-12 text-base font-medium !leading-relaxed text-black  dark:text-white  dark:opacity-90 sm:text-lg md:text-xl">
+                  We put our expertise and network to the benefit of our
+                  clients. We approach each client personally and provide you
+                  with the value that builds our long term business relationship
+                </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/about"
-                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    className="rounded-md bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                   Get Started
+                    Get Started
                   </Link>
-                 
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
+
+        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -274,11 +276,9 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div >
+        </div>
 
-
-
-        <div className="absolute top-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute left-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
             height="201"
@@ -302,8 +302,7 @@ const Hero = () => {
               d="M-98.1618 65.0889C-68.1416 60.0601 4.73364 60.4882 56.0734 102.431C120.248 154.86 139.905 161.419 177.137 166.956C214.37 172.493 255.575 186.165 281.856 215.481"
               stroke="url(#paint3_linear_25:218)"
             />
-            
-         
+
             <defs>
               <linearGradient
                 id="paint0_linear_25:218"
@@ -373,21 +372,22 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div >
+        </div>
 
-        
-   <span className=" w-full"  style={{opacity:0.4}}>
-    <Image
-      src="/images/hero/hero-bck.png"
-      layout="fill"
-      objectFit="cover"
-      objectPosition="center"
-      alt="Background image"
-      priority
-    />
-
-</span>
-{/*
+        <span className="w-full" style={{ opacity: 0.3 }}>
+          <Image
+            src="/images/hero/hero-bck.png"
+            // layout="fill"
+            // objectFit="cover"
+            // objectPosition="center"
+            className="w-full object-cover object-center absolute inset-0 h-full  backdrop-blur-sm"
+            width={1200}
+            height={500}
+            alt="Background image"
+            priority
+          />
+        </span>
+        {/*
         <span className=" w-full dark:hidden">
         <div style={{ position: 'relative' }}>
   <div style={{ position: 'absolute', top: '-400px', width: '100%',opacity: 0.5 , display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -424,9 +424,6 @@ const Hero = () => {
   </div>
 </div>
 </span>*/}
-
-
-
       </section>
     </>
   );
