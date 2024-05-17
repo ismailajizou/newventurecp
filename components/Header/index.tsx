@@ -53,7 +53,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <div className="h-30 flex w-full items-center justify-between px-10 text-white">
+                <div className="h-30  flex w-full items-center justify-between px-10 text-white">
                   {/* Logo LIGHT */}
                   <h1 className="text-4xl font-bold text-[#00df9a]">
                     <span className="bg-gradient-to-r from-[#2A3D8C] to-[#4A6CF7] bg-clip-text text-transparent dark:hidden inline-block">
@@ -63,7 +63,7 @@ const Header = () => {
                 </div>
                 
 
-                <div className="h-30 flex w-full items-center justify-between text-white">
+                <div className="h-30 flex w-full items-center justify-between px-10 text-white">
                   {/* Logo DARK*/}
                   <h1 className="text-4xl font-bold text-[#00df9a]">
                     <span className="hidden w-full bg-gradient-to-r from-[#FFFFFF] to-[#4A6CF7] bg-clip-text text-transparent dark:block xl:-mr-0">
